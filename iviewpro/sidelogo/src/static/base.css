@@ -1,0 +1,217 @@
+/*base全局css样式*/
+.xycenter{position: absolute;top:50%;left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+.xcenter{
+    position: absolute;left: 50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%)
+}
+.ycenter{
+    position: absolute;top: 50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+.ivu-input[disabled]{
+    background: #fafafa;
+    color: #999999;
+}
+.flx{
+    display: flex;flex-direction: row;
+}
+
+.ivu-table td, .ivu-table th{height: 40px;overflow: hidden;}
+
+.demo-upload-list{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    margin-right: 4px;
+}
+.demo-upload-list img{
+    width: 100%;
+    height: 100%;
+}
+.demo-upload-list-cover{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+}
+.demo-upload-list:hover .demo-upload-list-cover{
+    display: block;
+}
+.demo-upload-list-cover i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+
+/*密码强度*/
+.psdInsity span {
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	width: 20px;
+	height:6px;
+	background: #ccc;
+}
+.psdInsity .retv{
+	position: relative;
+}
+.psdInsity .retv .vaild{
+	position: absolute;
+	bottom: -7px;
+	left: 71px;
+}
+.psdInsity .retv .txtvai{
+	position: absolute;
+	line-height: 32px;
+	right:-206px;
+	top: 0px;color: #777;
+}
+.psdInsity span.current{
+	background: #ff524e;
+}
+.psdInsity span.current1{
+	background: #ff8754;
+}
+.psdInsity span.current2{
+	background: #17bd01;
+}
+
+
+.happy-scroll-content{
+    border-right-width: 2px!important;
+    border-bottom-width: 2px!important;
+}
+
+/* 禁用鼠标点击事件 */
+.disabled{ pointer-events: none;}
+
+/* 表单错误提示 */
+.error{}
+.error input{border-color:red;}
+.error input:hover{border-color:red;}
+.error input:focus{border-color:red;}
+
+.ivu-select-selection,.ivu-input,.ivu-page-options-elevator input{border-radius: 0;}
+.ivu-select.ivu-select-visible.ivu-select-single.ivu-select-default,.ivu-page-options-sizer{position: relative;}
+.ivu-input-number-input,.ivu-input-number-input-wrap,.ivu-input-number {
+	border-radius: 0 !important;
+}
+
+/* tab横向滚动条 */
+.ivu-table{ overflow-x: auto;}
+
+/* 图片验证码 */
+.form_img.vcode{
+    padding: 0;
+    height: 32px;
+    width: 113px;
+    border: 1px solid #dddee1;
+    border-radius: 3px;
+}
+
+/* 大标题 */
+.headline{
+    padding:10px 0;
+    border-bottom: 1px solid #eee;
+}
+.headline p{
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #1a77f3;
+    font-size: 15px;
+}
+
+/* 内容 */
+/* .forcont{
+    background: #fff;border-radius: 5px;margin: 0 10px 10px;min-height: 84vh;padding: 10px;
+} */
+
+/* tab列表 */
+.tablebox{padding: 10px;}
+.pagebox{padding:0 10px;text-align: right;}
+
+/* 分割线 */
+hr{border:0;}
+hr.cp1{height: 1px;background: #eee;}
+
+/* input 布局区域 */
+.ftitle{
+    padding: 5px 20px;
+}
+.ftitle .pdtb{
+    padding: 10px 0px;
+}
+.ftitle .pdb{padding-bottom: 10px;}
+.ftitle .pdt{padding-top: 10px;}
+.frow{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.frow .fcol{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.frow .fcol p{
+    line-height:32px;text-align: right;margin-right: 10px;min-width: 48px;
+}
+
+/* 按钮样式 */
+.thebtn,.addbtn{min-width: 80px;border-radius: 5px;}
+.thebtn{background: #4a91f0;
+    text-align: center;
+    color: #fff;
+}
+.addbtn{
+    margin-left: 20px;
+    border: 1px solid #57a3f3;
+    color: #57a3f3;
+    background: #f5f9ff;
+}
+
+
+/* 密码查看 */
+.confirmPwd{
+    position: relative;
+}
+.confirmPwd>span{
+    cursor: pointer;
+    position: absolute;
+    top:7px;
+    right: 10px;
+    width:18px;
+    height: 17px;
+}
+.confirmPwd span.shmg{
+    background:url('../assets/show.png');
+    background-size:cover;
+}
+.confirmPwd span.hdmg{
+    background:url('../assets/hidden.png');
+    background-size:cover;
+}
